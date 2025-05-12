@@ -79,10 +79,7 @@ public class PlayerMoveMent : MonoBehaviour
         }
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+    
 
     private bool isGrounded()
     {
