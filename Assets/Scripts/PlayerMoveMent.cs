@@ -55,7 +55,7 @@ public class PlayerMoveMent : MonoBehaviour
         }
         else
             wallJumpCoolDown += Time.deltaTime;
-        
+        anim.SetBool("OnWall", onWall());
     }
 
     private void Jump()
@@ -71,12 +71,13 @@ public class PlayerMoveMent : MonoBehaviour
             {
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 1);
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x),transform.localScale.y,transform.localScale.z);
-                anim.SetTrigger("OnWall");
+                anim.SetBool("OnWall", onWall());
             }
             else
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 7);
             wallJumpCoolDown = 0;
             
+
         }
         
     }
