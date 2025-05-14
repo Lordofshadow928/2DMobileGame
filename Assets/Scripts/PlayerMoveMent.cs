@@ -35,7 +35,7 @@ public class PlayerMoveMent : MonoBehaviour
 
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
-
+        anim.SetBool("OnWall", onWall());
         if (wallJumpCoolDown > 0.2f)
         {
             
@@ -49,7 +49,7 @@ public class PlayerMoveMent : MonoBehaviour
             }
             else
                 body.gravityScale = 7;
-
+            
             if (Input.GetKey(KeyCode.Space))
                 Jump();
         }
@@ -75,7 +75,6 @@ public class PlayerMoveMent : MonoBehaviour
             else
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 7);
             wallJumpCoolDown = 0;
-            
         }
         
     }
