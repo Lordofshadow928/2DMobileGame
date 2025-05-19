@@ -17,9 +17,9 @@ public class PlayerMoveMent : MonoBehaviour
     
     private void Awake()
     {
-        body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        body = this.GetComponent<Rigidbody2D>();
+        anim = this.GetComponent<Animator>();
+        boxCollider = this.GetComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -50,7 +50,7 @@ public class PlayerMoveMent : MonoBehaviour
             else
                 body.gravityScale = 7;
             
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space)) 
                 Jump();
         }
         else
@@ -75,6 +75,7 @@ public class PlayerMoveMent : MonoBehaviour
             else
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 7);
             wallJumpCoolDown = 0;
+            
         }
         
     }
