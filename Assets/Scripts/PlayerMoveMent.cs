@@ -36,6 +36,7 @@ public class PlayerMoveMent : MonoBehaviour
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
         anim.SetBool("OnWall", onWall());
+        
         if (wallJumpCoolDown > 0.2f)
         {
             
@@ -55,6 +56,8 @@ public class PlayerMoveMent : MonoBehaviour
         }
         else
             wallJumpCoolDown += Time.deltaTime;
+
+        
         
     }
 
@@ -77,7 +80,6 @@ public class PlayerMoveMent : MonoBehaviour
             wallJumpCoolDown = 0;
             
         }
-        
     }
     
 
@@ -91,4 +93,10 @@ public class PlayerMoveMent : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
+
+    //private bool isFalling()
+    //{
+    //    RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.up, 0.1f, groundLayer);
+    //    return raycastHit.collider != null;
+    //}
 }
