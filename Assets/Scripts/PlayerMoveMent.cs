@@ -14,6 +14,7 @@ public class PlayerMoveMent : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCoolDown;
     private float horizontalInput;
+    private float onAirVelocity;
     
     private void Awake()
     {
@@ -80,6 +81,7 @@ public class PlayerMoveMent : MonoBehaviour
             wallJumpCoolDown = 0;
             
         }
+        
     }
     
 
@@ -94,9 +96,5 @@ public class PlayerMoveMent : MonoBehaviour
         return raycastHit.collider != null;
     }
 
-    //private bool isFalling()
-    //{
-    //    RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.up, 0.1f, groundLayer);
-    //    return raycastHit.collider != null;
-    //}
+    
 }

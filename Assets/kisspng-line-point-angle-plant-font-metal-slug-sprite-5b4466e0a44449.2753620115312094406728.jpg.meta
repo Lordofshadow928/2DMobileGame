@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: d18db268da02f1c44bdb56da02ec02bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ab2ca0081c0634089aa28ebd6a7c65
+      internalID: 336488319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83377f0736c4b7d4787495a6a7a55449
+      internalID: 1390916962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c6951819f438419aa33368e14f32f
+      internalID: -1524443101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa19c8c7e7638348a1bfe3312033e7c
+      internalID: 1106950943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35d6a7a88529fe44b88208679923054
+      internalID: 971136420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bb01208a4a8b14db35240239bde9a1
+      internalID: 1673221764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0124ea368f7b9374380febfb027f6d27
+      internalID: -310268497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006dea2ae9755804c8e394ad6ad5dfe7
+      internalID: -1784789084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02641e04113d7bd47a330de538557b45
+      internalID: -1442103663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc7cd5b98b51c64c8b55977d95f99b9
+      internalID: -813130617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7085d9be615b7b24dbdd01669a4c9cc7
+      internalID: -2030987283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea98ff1ee39adda4eaf11ac47875a865
+      internalID: -755448663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16da2462d5852fe4e9f04c15439e5a88
+      internalID: -314312158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1320
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2845d51e395943841b95075edfc600b0
+      internalID: -507954807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1320
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c60a6ed49cfaf4fa704539593cd917
+      internalID: 942495893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5606e1ba4dce30947aae0e526c16ca29
+      internalID: 1957138200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1200
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747d16423ceaf0047aadf547e62b5973
+      internalID: -375158723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1200
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc50ecb25581994696873b3a6e44380
+      internalID: -103716869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b95d030c19a0f6488a99052cacf1801
+      internalID: 1797654972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_19
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1080
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d90f4450968845479f2627d1ade369c
+      internalID: -385554253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1080
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa025aefba0b97445a5ddcd5922b73e9
+      internalID: 157693753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce0da54ceddefb419673c8fcab3ebe9
+      internalID: -716237555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 960
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952ff5d5914000c48af888c3d05fdb5b
+      internalID: 1682974457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 960
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68fad776f541b347935f55d6e9b0427
+      internalID: -1907769353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0591c4fad8dc2a49821a1ff8601fca4
+      internalID: -1526536018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 840
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dd2cdc764cf04449dfa325e262fa53
+      internalID: -1728313225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 840
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778448a4f7e80624388e3613e6f7cc32
+      internalID: -349175467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e307eceecc9f3e84db7a2a24d2e40b9c
+      internalID: 546342270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 720
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184a70265aa6de2418e8279017a60958
+      internalID: 1300644740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5a3d9c7326f1d43a3d0555b6a9376a
+      internalID: 718018141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ec35a94e462fa47809dbd8533dcc32
+      internalID: 1788404473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_31
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 600
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49a70aa83d899e48b269cd1ed606833
+      internalID: 1163752901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 600
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6341bb97eb173d47b24effd9e049a59
+      internalID: -984871391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e43b64c49357ca4c90819aa08f423f1
+      internalID: 1915174473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094c539f47d9abd44a3d4cd96e371647
+      internalID: -86515626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41aca6e91504a534abe0d9812ea527d6
+      internalID: -263057139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6173c1f30e18f4aa0dd5ca21a92344
+      internalID: -1581408676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca20cf1379f3c940bb6c1e320fc8c86
+      internalID: -1581481296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc09a0aa3eeba24fa5979a8decb2e5d
+      internalID: 2014284005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d93749015adaba49bcdbb065bd9af7d
+      internalID: 1803866362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_40
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73b53a6489938b4288733c59c9bc874
+      internalID: 735598140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e40a5452a5631546b1c2d6203b255db
+      internalID: -856732328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f770ec6b081d8c04d9a42db88a161719
+      internalID: 1608176362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_43
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390ba5341be433e43b5976d31c012d04
+      internalID: -330293672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b075ead6b2fccd4886e5a54f370e715
+      internalID: -483408756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae8b76fd08a08d4b9a1f0b91f5d3e96
+      internalID: 30354373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_46
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340495dcb2c7950418c1840e34e5f4eb
+      internalID: 1706405882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b9df882ff688d468f114d399d2abb1
+      internalID: -164004107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_0: 336488319
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_1: 1390916962
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_10: -2030987283
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_11: -755448663
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_12: -314312158
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_13: -507954807
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_14: 942495893
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_15: 1957138200
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_16: -375158723
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_17: -103716869
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_18: 1797654972
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_19: -385554253
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_2: -1524443101
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_20: 157693753
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_21: -716237555
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_22: 1682974457
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_23: -1907769353
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_24: -1526536018
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_25: -1728313225
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_26: -349175467
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_27: 546342270
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_28: 1300644740
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_29: 718018141
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_3: 1106950943
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_30: 1788404473
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_31: 1163752901
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_32: -984871391
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_33: 1915174473
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_34: -86515626
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_35: -263057139
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_36: -1581408676
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_37: -1581481296
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_38: 2014284005
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_39: 1803866362
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_4: 971136420
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_40: 735598140
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_41: -856732328
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_42: 1608176362
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_43: -330293672
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_44: -483408756
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_45: 30354373
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_46: 1706405882
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_47: -164004107
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_5: 1673221764
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_6: -310268497
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_7: -1784789084
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_8: -1442103663
+      kisspng-line-point-angle-plant-font-metal-slug-sprite-5b4466e0a44449.2753620115312094406728_9: -813130617
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
