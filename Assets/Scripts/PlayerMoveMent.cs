@@ -46,7 +46,7 @@ public class PlayerMoveMent : MonoBehaviour
 
             if (onWall() && !isGrounded())
             {
-                body.gravityScale = 0;
+                body.gravityScale = 4;
                 body.velocity = Vector2.zero;
             }
             else
@@ -77,7 +77,7 @@ public class PlayerMoveMent : MonoBehaviour
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x),transform.localScale.y,transform.localScale.z);
             }
             else
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 7);
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 9);
             wallJumpCoolDown = 0;
             
         }
