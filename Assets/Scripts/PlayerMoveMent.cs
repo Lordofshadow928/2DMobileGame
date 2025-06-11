@@ -17,7 +17,7 @@ public class PlayerMoveMent : MonoBehaviour
     private float horizontalInput;
     private float onAirVelocity;
     private float jumpTimeCounter;
-    private float jumpTimeMax = 0.1f; 
+    private float jumpTimeMax = 0.15f; 
 
     private void Awake()
     {
@@ -76,11 +76,13 @@ public class PlayerMoveMent : MonoBehaviour
         {
             jumpTimeCounter -= Time.deltaTime;
             body.velocity = new Vector2(body.velocity.x, jumpPower);
+            anim.SetTrigger("Jump");
         }
         else if (jumpTimeCounter <= 0)
         {
             jumpTimeCounter = 0;
             body.velocity = new Vector2(body.velocity.x, body.velocity.y);
+            anim.SetTrigger("Jump");
         }
         //else if(onWall() && !isGrounded())
         //{
