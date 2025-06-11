@@ -18,6 +18,7 @@ public class PlayerMoveMent : MonoBehaviour
     private float onAirVelocity;
     private float jumpTimeCounter;
     private float jumpTimeMax = 0.1f; 
+
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
