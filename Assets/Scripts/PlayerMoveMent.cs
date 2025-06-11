@@ -61,7 +61,7 @@ public class PlayerMoveMent : MonoBehaviour
         }
         else
             wallJumpCoolDown += Time.deltaTime;
-        anim.SetFloat("OnAirVelocity", body.velocity.y);
+        //anim.SetFloat("OnAirVelocity", body.velocity.y);
     }
 
     private void Jump()
