@@ -17,8 +17,8 @@ public class PlayerMoveMent : MonoBehaviour
     private float horizontalInput;
     private float onAirVelocity;
     private float jumpTimeCounter;
-    private float jumpTimeMax = 0.15f; 
-
+    private float jumpTimeMax = 0.15f;
+    public ParticleSystem ParticleEF_Run;
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
@@ -40,7 +40,7 @@ public class PlayerMoveMent : MonoBehaviour
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
         anim.SetBool("OnWall", onWall());
-        
+        RunEffect();
 
         if (wallJumpCoolDown > 0.2f)
         {
@@ -98,7 +98,11 @@ public class PlayerMoveMent : MonoBehaviour
         //}
         
     }
-    
+    private void RunEffect()
+    {
+        ParticleEF_Run.Play();
+    }
+
 
     private bool isGrounded()
     {
