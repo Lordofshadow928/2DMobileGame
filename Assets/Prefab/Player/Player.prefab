@@ -129,13 +129,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpPower: 20
+  jumpPower: 18
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   wallLayer:
     serializedVersion: 2
     m_Bits: 8192
+  coyoteTime: 0.25
   ParticleEF: {fileID: 6829838907595721813}
 --- !u!95 &1154457361911675985
 Animator:

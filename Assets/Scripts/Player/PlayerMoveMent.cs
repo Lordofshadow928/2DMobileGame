@@ -5,11 +5,18 @@ using UnityEngine.UIElements;
 
 public class PlayerMoveMent : MonoBehaviour
 {
-    
-    public float speed;
-    public float jumpPower;
+    [Header("Player Movement Settings")]
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpPower;
+
+    [Header("Player Layer Settings")]
     [SerializeField]private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
+
+    [Header("Coyote Time")]
+    [SerializeField] private float coyoteTime;
+    private float coyoteTimeCounter;
+
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
@@ -19,6 +26,7 @@ public class PlayerMoveMent : MonoBehaviour
     private float jumpTimeCounter;
     private float jumpTimeMax = 0.15f;
     public ParticleSystem ParticleEF;
+    
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
@@ -53,6 +61,14 @@ public class PlayerMoveMent : MonoBehaviour
             
             if (Input.GetKey(KeyCode.Space)) 
                 Jump();
+            if(isGrounded())
+            {
+                coyoteTimeCounter = coyoteTime;
+            }
+            else if (coyoteTimeCounter > 0)
+            {
+                coyoteTimeCounter -= Time.deltaTime;
+            }
         }
         else
             wallJumpCoolDown += Time.deltaTime;
@@ -79,19 +95,27 @@ public class PlayerMoveMent : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, body.velocity.y);
             JumpFX();
         }
-        //else if(onWall() && !isGrounded())
-        //{
-        //    if(horizontalInput == 0)
-        //    {
-        //        body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 1);
-        //        transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x),transform.localScale.y,transform.localScale.z);
-        //    }
-        //    else
-        //        body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 9);
-        //    wallJumpCoolDown = 0;
-            
-        //}
-        
+        if (coyoteTimeCounter <= 0 && !onWall())
+        {
+            return;
+        }
+        else if (coyoteTimeCounter > 0)
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpPower + 8);
+        }
+        coyoteTimeCounter = 0;
+
+        if (onWall() && !isGrounded())
+        {
+            if (horizontalInput == 0)
+            {
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 6, 1);
+                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            else
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 9);
+            wallJumpCoolDown = 0;
+        }
     }
 
     private void Flip()
