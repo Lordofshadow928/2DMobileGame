@@ -18,7 +18,7 @@ public class PlayerMoveMent : MonoBehaviour
     private float onAirVelocity;
     private float jumpTimeCounter;
     private float jumpTimeMax = 0.15f;
-    public ParticleSystem ParticleEF_Run;
+    public ParticleSystem ParticleEF;
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
@@ -28,19 +28,14 @@ public class PlayerMoveMent : MonoBehaviour
 
     private void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        
 
-        if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        
-        else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+        Flip();
 
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
         anim.SetBool("OnWall", onWall());
-        RunEffect();
+
+        
 
         if (wallJumpCoolDown > 0.2f)
         {
@@ -70,19 +65,19 @@ public class PlayerMoveMent : MonoBehaviour
         {
             jumpTimeCounter = jumpTimeMax;
             body.velocity = new Vector2(body.velocity.x, jumpPower);
-            anim.SetTrigger("Jump");
+            JumpFX();
         }
         else if (jumpTimeCounter > 0 && Input.GetButton("Jump") && !isGrounded())
         {
             jumpTimeCounter -= Time.deltaTime;
             body.velocity = new Vector2(body.velocity.x, jumpPower);
-            anim.SetTrigger("Jump");
+            JumpFX();
         }
         else if (jumpTimeCounter <= 0)
         {
             jumpTimeCounter = 0;
             body.velocity = new Vector2(body.velocity.x, body.velocity.y);
-            anim.SetTrigger("Jump");
+            JumpFX();
         }
         //else if(onWall() && !isGrounded())
         //{
@@ -98,9 +93,33 @@ public class PlayerMoveMent : MonoBehaviour
         //}
         
     }
-    private void RunEffect()
+
+    private void Flip()
     {
-        ParticleEF_Run.Play();
+        horizontalInput = Input.GetAxis("Horizontal");
+
+
+        if (horizontalInput > 0.01f)
+        {
+            transform.localScale = Vector3.one;
+            
+        }
+     
+        else if (horizontalInput < -0.01f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            
+        }
+
+        if (body.velocity.y == 0)
+        {
+            ParticleEF.Play();
+        }
+    }
+    private void JumpFX()
+    {
+        anim.SetTrigger("Jump");
+        ParticleEF.Play();
     }
 
 
