@@ -1,21 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.InputSystem; 
 using UnityEngine.UIElements;
+
+
 
 public class PlayerMoveMent : MonoBehaviour
 {
-    [Header("Player Movement Settings")]
+    [Header("Running")]
     [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
-
     [Header("Player Layer Settings")]
     [SerializeField]private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
-
     [Header("Coyote Time")]
     [SerializeField] private float coyoteTime;
     private float coyoteTimeCounter;
+    [Header("Jumping")]
+    [SerializeField] private float jumpPower;
+    private float jumpTimeCounter;
+    private float jumpTimeMax = 0.15f;
+    [Header("Dashing")]
+    [SerializeField] private float dashSpeed = 30f;
+    [SerializeField] private float startDashTime = 0.1f;
+    [SerializeField] private float dashCooldown = 0.2f;
+    [SerializeField] private GameObject dashEffect;
+    
 
     private Rigidbody2D body;
     private Animator anim;
@@ -23,10 +34,12 @@ public class PlayerMoveMent : MonoBehaviour
     private float wallJumpCoolDown;
     private float horizontalInput;
     private float onAirVelocity;
-    private float jumpTimeCounter;
-    private float jumpTimeMax = 0.15f;
     public ParticleSystem ParticleEF;
-    
+    private bool isDashing = false;
+    private float dashTime;
+    private float m_dashCoolDown;
+    private float m_dashTime;
+    private bool m_hasDashedInAir = false;
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
@@ -36,19 +49,13 @@ public class PlayerMoveMent : MonoBehaviour
 
     private void Update()
     {
-
         Flip();
-
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
         anim.SetBool("OnWall", onWall());
 
-        
-
         if (wallJumpCoolDown > 0.2f)
         {
-            
-
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
             if (onWall() && !isGrounded())
@@ -122,7 +129,6 @@ public class PlayerMoveMent : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -157,9 +163,51 @@ public class PlayerMoveMent : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
-    
-    
-        
-    
 
+    private void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            if (m_dashTime <= 0f)
+            {
+                isDashing = false;
+                m_dashCoolDown = dashCooldown;
+                m_dashTime = startDashTime;
+                body.velocity = Vector2.zero;
+            }
+            else
+            {
+                m_dashTime -= Time.deltaTime;
+                if (horizontalInput > 0.01f)
+                    body.velocity = Vector2.right * dashSpeed;
+                else if (horizontalInput < -0.01f)
+                    body.velocity = Vector2.left * dashSpeed;
+            }
+        }
+    }
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (!isDashing && !m_hasDashedInAir && m_dashCoolDown <= 0f)
+        {
+            // dash input (left shift)
+            
+            {
+                isDashing = true;
+                //// dash effect
+                //PoolManager.instance.ReuseObject(dashEffect, transform.position, Quaternion.identity);
+                // if player in air while dashing
+                //if (!isGrounded)
+                //{
+                //    m_hasDashedInAir = true;
+                //}
+                // dash logic is in FixedUpdate
+            }
+        }
+        m_dashCoolDown -= Time.deltaTime;
+
+        // if has dashed in air once but now grounded
+        if (m_hasDashedInAir)
+            m_hasDashedInAir = false;
+    }
 }

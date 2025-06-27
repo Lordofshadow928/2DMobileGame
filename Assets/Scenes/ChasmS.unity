@@ -419,6 +419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParticleEF
       objectReference: {fileID: 0}
+    - target: {fileID: 3094455422100659399, guid: 34d7683799adb454faf52e807b8f1970,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4457847287593667487, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 6829838907595721813, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6829838907595721813, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
@@ -482,12 +487,12 @@ PrefabInstance:
     - target: {fileID: 6829838907595721813, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6829838907595721813, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8461248013586103890, guid: 34d7683799adb454faf52e807b8f1970,
         type: 3}
@@ -499,7 +504,8 @@ PrefabInstance:
       propertyPath: ParticleEF_Run
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3094455422100659399, guid: 34d7683799adb454faf52e807b8f1970, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
