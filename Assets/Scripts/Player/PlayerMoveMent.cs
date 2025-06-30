@@ -82,6 +82,11 @@ public class PlayerMoveMent : MonoBehaviour
         anim.SetFloat("OnAirVelocity", body.velocity.y);
     }
 
+    public void OnMove(InputAction.CallbackContext context)
+    {
+            horizontalInput = context.ReadValue<Vector2>().x;
+    }
+
     private void Jump()
     {
         if(isGrounded() && Input.GetButtonDown("Jump"))
@@ -197,11 +202,11 @@ public class PlayerMoveMent : MonoBehaviour
                 //// dash effect
                 //PoolManager.instance.ReuseObject(dashEffect, transform.position, Quaternion.identity);
                 // if player in air while dashing
-                //if (!isGrounded)
-                //{
-                //    m_hasDashedInAir = true;
-                //}
-                // dash logic is in FixedUpdate
+                if (!isGrounded())
+                {
+                    m_hasDashedInAir = true;
+                }
+                //dash logic is in FixedUpdate
             }
         }
         m_dashCoolDown -= Time.deltaTime;
@@ -211,3 +216,4 @@ public class PlayerMoveMent : MonoBehaviour
             m_hasDashedInAir = false;
     }
 }
+
