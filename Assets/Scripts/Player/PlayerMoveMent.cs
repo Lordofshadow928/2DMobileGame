@@ -1,9 +1,7 @@
+
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.InputSystem; 
-using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 
 
@@ -12,7 +10,7 @@ public class PlayerMoveMent : MonoBehaviour
     [Header("Running")]
     [SerializeField] private float speed;
     [Header("Player Layer Settings")]
-    [SerializeField]private LayerMask groundLayer;
+    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [Header("Coyote Time")]
     [SerializeField] private float coyoteTime;
@@ -26,20 +24,15 @@ public class PlayerMoveMent : MonoBehaviour
     [SerializeField] private float startDashTime = 0.1f;
     [SerializeField] private float dashCooldown = 0.2f;
     [SerializeField] private GameObject dashEffect;
-    
+    private bool canDash = true;
+    private bool isDashing = false;
 
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
     private float wallJumpCoolDown;
     private float horizontalInput;
-    private float onAirVelocity;
     public ParticleSystem ParticleEF;
-    private bool isDashing = false;
-    private float dashTime;
-    private float m_dashCoolDown;
-    private float m_dashTime;
-    private bool m_hasDashedInAir = false;
     private void Awake()
     {
         body = this.GetComponent<Rigidbody2D>();
@@ -49,6 +42,11 @@ public class PlayerMoveMent : MonoBehaviour
 
     private void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         Flip();
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("Grounded", isGrounded());
@@ -65,10 +63,10 @@ public class PlayerMoveMent : MonoBehaviour
             }
             else
                 body.gravityScale = 7;
-            
-            if (Input.GetKey(KeyCode.Space)) 
+
+            if (Input.GetKey(KeyCode.Space))
                 Jump();
-            if(isGrounded())
+            if (isGrounded())
             {
                 coyoteTimeCounter = coyoteTime;
             }
@@ -80,16 +78,26 @@ public class PlayerMoveMent : MonoBehaviour
         else
             wallJumpCoolDown += Time.deltaTime;
         anim.SetFloat("OnAirVelocity", body.velocity.y);
+
+        if (Input.GetKeyDown(KeyCode.Z) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+        anim.SetBool("isDashing", isDashing);
+            
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    private void FixedUpdate()
     {
-            horizontalInput = context.ReadValue<Vector2>().x;
-    }
+        if(isDashing)
+        {
+            return;
+        }
 
+    }
     private void Jump()
     {
-        if(isGrounded() && Input.GetButtonDown("Jump"))
+        if (isGrounded() && Input.GetButtonDown("Jump"))
         {
             jumpTimeCounter = jumpTimeMax;
             body.velocity = new Vector2(body.velocity.x, jumpPower);
@@ -137,13 +145,13 @@ public class PlayerMoveMent : MonoBehaviour
         if (horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
-            
+
         }
-     
+
         else if (horizontalInput < -0.01f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
-            
+
         }
 
         if (body.velocity.y == 0)
@@ -151,12 +159,26 @@ public class PlayerMoveMent : MonoBehaviour
             ParticleEF.Play();
         }
     }
+    
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = body.gravityScale;
+        body.gravityScale = 0f;
+        body.velocity = new Vector2(transform.localScale.x * dashSpeed, 0f);
+        yield return new WaitForSeconds(startDashTime);
+        body.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+    }
+
     private void JumpFX()
     {
         anim.SetTrigger("Jump");
         ParticleEF.Play();
     }
-
 
     private bool isGrounded()
     {
@@ -169,51 +191,5 @@ public class PlayerMoveMent : MonoBehaviour
         return raycastHit.collider != null;
     }
 
-    private void FixedUpdate()
-    {
-        if (isDashing)
-        {
-            if (m_dashTime <= 0f)
-            {
-                isDashing = false;
-                m_dashCoolDown = dashCooldown;
-                m_dashTime = startDashTime;
-                body.velocity = Vector2.zero;
-            }
-            else
-            {
-                m_dashTime -= Time.deltaTime;
-                if (horizontalInput > 0.01f)
-                    body.velocity = Vector2.right * dashSpeed;
-                else if (horizontalInput < -0.01f)
-                    body.velocity = Vector2.left * dashSpeed;
-            }
-        }
-    }
-
-    public void Dash(InputAction.CallbackContext context)
-    {
-        if (!isDashing && !m_hasDashedInAir && m_dashCoolDown <= 0f)
-        {
-            // dash input (left shift)
-            
-            {
-                isDashing = true;
-                //// dash effect
-                //PoolManager.instance.ReuseObject(dashEffect, transform.position, Quaternion.identity);
-                // if player in air while dashing
-                if (!isGrounded())
-                {
-                    m_hasDashedInAir = true;
-                }
-                //dash logic is in FixedUpdate
-            }
-        }
-        m_dashCoolDown -= Time.deltaTime;
-
-        // if has dashed in air once but now grounded
-        if (m_hasDashedInAir)
-            m_hasDashedInAir = false;
-    }
+    
 }
-
