@@ -141,7 +141,8 @@ MonoBehaviour:
   dashSpeed: 30
   startDashTime: 0.1
   dashCooldown: 0.2
-  dashEffect: {fileID: 0}
+  dashEffect: {fileID: 2618882772056632900, guid: eb881037319d1f148a7aad48cc715431,
+    type: 3}
   ParticleEF: {fileID: 6829838907595721813}
 --- !u!95 &1154457361911675985
 Animator:
