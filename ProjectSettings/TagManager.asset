@@ -9,7 +9,6 @@ TagManager:
   - Wall
   - Ceiling
   - Enemy
-  - CheckPoint
   - Checkpoint
   layers:
   - Default
