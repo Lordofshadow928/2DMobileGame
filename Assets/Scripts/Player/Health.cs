@@ -26,6 +26,7 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
+                anim.SetBool("grounded", true);
                 anim.SetTrigger("Death");
                 GetComponent<PlayerMoveMent>().enabled = false;
                 dead = true;
@@ -34,7 +35,7 @@ public class Health : MonoBehaviour
         
     }
 
-    private void AddHealth(float _value)
+    public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
@@ -45,4 +46,5 @@ public class Health : MonoBehaviour
         anim.ResetTrigger("Death");
         anim.Play("Player Idle");
     }
+ 
 }

@@ -247,9 +247,9 @@ GameObject:
   - component: {fileID: 1343230279742060194}
   - component: {fileID: 6829838907595721813}
   - component: {fileID: 6526383295137682705}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ParticleEF
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
